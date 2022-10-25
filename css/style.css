@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: all .8s linear;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.home {
+    background: url("../image/events-heavenly-header.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.home .overflow {
+    width: 100%;
+    height: 90vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(219, 3, 3, 0.6);
+}
+
+.sideBar {
+    left: -288px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+}
+
+.sideBar .list {
+    background: rgba(65, 70, 88, .5);
+    position: relative;
+    width: 18rem;
+}
+
+.sideBar .list ul {
+    transform: translateY(80%);
+}
+
+.sideBar .toggle {
+    transform: translateY(40%);
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.sideBar .fa-xmark {
+    position: absolute;
+    right: 0;
+    margin: 15px;
+}
+
+.sideBar .fa-xmark {
+    cursor: pointer;
+}
+
+.boxChanging {
+    position: fixed;
+    background: rgb(65, 70, 88);
+    padding: 10px;
+    top: 30%;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+}
+
+.boxChanging i:hover {
+    transform: rotate(45deg);
+}
+
+.boxChanging .box span {
+    width: 30px;
+    height: 30px;
+    background-color: teal;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hide {
+    right: -100px;
+    display: none;
+    transition: all 1.5s;
+}
+
+.btn-danger {
+    --bs-btn-focus-shadow-rgb: 0;
+}
+
+.details h3 {
+    background: #e68285;
+    cursor: pointer;
+    margin-bottom: 0 !important
+}
+
+.details p {
+    font-size: 14px;
+    background-color: #ccc;
+    margin-bottom: 0rem !important;
+    padding: 10px;
+    display: none;
+    transition: all .5s;
+}
+
+.plan .image img {
+    border-radius: 0 30px 0 30px;
+    cursor: pointer;
+}
+
+.plan .box {
+    box-shadow: 0 .5rem 1rem;
+}
+
+.plan .image img:hover {
+    transform: scale(1.1);
+    border-radius: 0;
+}
+
+.duration {
+    background: url("../image/invitation-2508607__340.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 45vh;
+}
+
+.duration .overlay {
+    background: rgba(219, 3, 3, 0.6);
+    width: 100%;
+    height: 45vh;
+}
+
+.border-muted {
+    border: 1px solid #777;
+}
+
+.btn-danger {
+    --bs-btn-border-radius: 0rem;
+}
